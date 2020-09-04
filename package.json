@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-huawei-push",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Push Plugin",
   "cordova": {
     "id": "cordova-plugin-huawei-push",

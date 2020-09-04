@@ -55,6 +55,11 @@ huaweiPush.register(function(token) {
 }, function(err) {
     console.log(err);
 }, []);
+
+// 接收token
+huaweiPush.onNewToken(function(token) {
+    console.log(token); // 会多次接收到token
+});
 ```
 
 注册完成后，需要监听 `messageReceived` 事件

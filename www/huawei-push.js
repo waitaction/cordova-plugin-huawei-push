@@ -8,7 +8,7 @@ var HuaweiPush = function () { };
  * @param options 参数
  */
 HuaweiPush.prototype.register = function (successCallback, errorCallback, options) {
-    cordova.exec(successCallback, errorCallback, "HuaweiPushPlugin", "register", [options]);
+    cordova.exec(successCallback, errorCallback, "HuaweiPushPlugin", "register", options);
 };
 
 /**
@@ -17,7 +17,7 @@ HuaweiPush.prototype.register = function (successCallback, errorCallback, option
  * @param errorCallback 通知失败的回调
  */
 HuaweiPush.prototype.onNewToken = function (successCallback, errorCallback) {
-    cordova.exec(successCallback, errorCallback, "HuaweiPushPlugin", "onNewToken", [options]);
+    cordova.exec(successCallback, errorCallback, "HuaweiPushPlugin", "onNewToken", []);
 };
 
 module.exports = new HuaweiPush();
